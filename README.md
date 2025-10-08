@@ -55,3 +55,5 @@ Ideally I would deploy this application on the same domain as our APIs, or in a 
 I'm going to briefly create a deployment. I think for accountability it's always good to deploy as fast as possible and make sure all stakeholders know links where they can see project management and deliverables without intervening on the team.
 
 In a larger project, I'd probably use Google Cloud Storage for a simple frontend like this, and a CDN if necessary though most of that seems sorted by the API.
+
+For now, I want a quick and low setup deployment where my API calls continue to work. I like to use Netlify + Vercel for small and free deployments of frontends + APIs.

@@ -1,10 +1,7 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Card,
-  CardBody,
   Input,
   Select,
   Option,
@@ -23,9 +20,9 @@ function App() {
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true); // State to manage loading status
-  const [error, setError] = useState(null); // State to handle errors
+  const [, setData] = useState(null);
+  const [, setLoading] = useState(true); 
+  const [, setError] = useState(null); 
   const neighborhoodsList = neighborhoods.data.map(n => n.name)
 
   useEffect(() => {
@@ -67,7 +64,7 @@ function App() {
 
         {/* Select neighborhood/nearby */}
         <div className="flex flex-col w-[200px] sm:flex-row gap-4">
-          {/* TODO: Get neighborhoods from API */}
+          //TODO: Get neighborhoods from API 
           {console.log('TEST', neighborhoods.data.map(n => n.name))}
           <Select className="w-[200px]" label="Select Neighborhood">
             <Option>Nearby</Option>
