@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# Experiences Application
+The goal of this project is to inspire guests, while giving users the ability to perform simple / complex querying of our maintained hidden gems.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application should be run on an iPad in the lounge, or displayed on large televisions. Staff may also use this to search hidden gems they personally recommend if asked by guests.
 
-Currently, two official plugins are available:
+My general solution to this, with the limitation of it being a days work, is as follows.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users are shown a screen with nearby attractions, all within 15 minutes of this property.
 
-## React Compiler
+Users see a reduced view of a few options for:
+* Food and drink
+* Shopping
+* Culture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users may scroll sideways to see more options, may click for more details, may filter by some simple and high-value tags, may type in simple search queries.
 
-## Expanding the ESLint configuration
+Bonuses:
+[] Set up automated deployments 
+[] Write a demo test 
+[x] Use Tailwind 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Given more time I would:
+* Whitelabel this for different themes, seasons, properties etc.
+* Setup a component library with Storybook, and automate snapshot testing with Chromatic.
+* Project management on GitHub Projects and Issues
+* Less greedy use of API resources
+* Mandatory test coverage protected with pre-commit hooks. 
+* ...
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Quickstart
+Node version - 24.6.0
+Demo - TODO
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### First-time setup
+You will need node and npm.
+
+First run:
+```
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Then run:
 ```
+npm run dev
+```
+## Diary
+
+So ending the pairing session with the team, I was stuck on a CORS issue. It feels like that happens about once per project, and I'm aware my solution for localhost may not work in a production environment.
+
+Ideally I would deploy this application on the same domain as our APIs, or in a larger version of this project I would use Next.js's API router and wrap these external calls in a proxy route for cleanliness. 
+
+### Demo deployment
+
+I'm going to briefly create a deployment. I think for accountability it's always good to deploy as fast as possible and make sure all stakeholders know links where they can see project management and deliverables without intervening on the team.
+
+In a larger project, I'd probably use Google Cloud Storage for a simple frontend like this, and a CDN if necessary though most of that seems sorted by the API.
