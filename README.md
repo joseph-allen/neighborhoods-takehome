@@ -1,42 +1,57 @@
 # Experiences Application
+
 [Demo](https://experiences-japan.netlify.app/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2069f50f-a862-4193-bb9f-b6ec1a5c78f4/deploy-status)](https://app.netlify.com/projects/experiences-japan/deploys)
 
-The goal of this project is to inspire guests, while giving users the ability to perform simple / complex querying of our maintained hidden gems.
+## Table of Contents
+- [Experiences Application](#experiences-application)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Bonuses](#bonuses)
+  - [Future Improvements](#future-improvements)
+  - [Quickstart](#quickstart)
+    - [First-time setup](#first-time-setup)
+  - [Diary](#diary)
+    - [Demo deployment](#demo-deployment)
+
+## Overview
+The goal of this project is to inspire guests while giving users the ability to perform simple or complex querying of our maintained hidden gems.
 
 This application should be run on an iPad in the lounge, or displayed on large televisions. Staff may also use this to search hidden gems they personally recommend if asked by guests.
 
-My general solution to this, with the limitation of it being a days work, is as follows.
+My general solution to this, with the limitation of it being a day's work, is as follows.
 
+## Features
 Users are shown a screen with nearby attractions, all within 15 minutes of this property.
 
 Users see a reduced view of a few options for:
-* Food and drink
-* Shopping
-* Culture
+- Food and drink
+- Shopping
+- Culture
 
-Users may scroll sideways to see more options, may click for more details, may filter by some simple and high-value tags, may type in simple search queries.
+Users may scroll sideways to see more options, click for more details, filter by simple and high-value tags, or type in simple search queries.
 
-Bonuses:
-[x] Set up automated deployments 
-[] Write a demo test 
-[x] Use Tailwind 
+## Bonuses
+- [x] Set up automated deployments
+- [ ] Write a demo test
+- [x] Use Tailwind
 
+## Future Improvements
 Given more time I would:
-* Whitelabel this for different themes, seasons, properties etc.
-* Setup a component library with Storybook, and automate snapshot testing with Chromatic.
-* Project management on GitHub Projects and Issues
-* Less greedy use of API resources
-* Mandatory test coverage protected with pre-commit hooks. 
-* ...
-
+- Whitelabel this for different themes, seasons, properties, etc.
+- Setup a component library with Storybook and automate snapshot testing with Chromatic
+- Project management on GitHub Projects and Issues
+- Less greedy use of API resources
+- Mandatory test coverage protected with pre-commit hooks
+- ...
 
 ## Quickstart
-Node version - 24.6.0
+**Node version:** 24.6.0  
 [Demo](https://experiences-japan.netlify.app/)
 
 ### First-time setup
-You will need node and npm.
+You will need Node and npm.
 
 First run:
 ```
