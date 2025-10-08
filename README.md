@@ -1,4 +1,7 @@
 # Experiences Application
+[Demo](https://experiences-japan.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2069f50f-a862-4193-bb9f-b6ec1a5c78f4/deploy-status)](https://app.netlify.com/projects/experiences-japan/deploys)
+
 The goal of this project is to inspire guests, while giving users the ability to perform simple / complex querying of our maintained hidden gems.
 
 This application should be run on an iPad in the lounge, or displayed on large televisions. Staff may also use this to search hidden gems they personally recommend if asked by guests.
@@ -15,7 +18,7 @@ Users see a reduced view of a few options for:
 Users may scroll sideways to see more options, may click for more details, may filter by some simple and high-value tags, may type in simple search queries.
 
 Bonuses:
-[] Set up automated deployments 
+[x] Set up automated deployments 
 [] Write a demo test 
 [x] Use Tailwind 
 
@@ -30,7 +33,7 @@ Given more time I would:
 
 ## Quickstart
 Node version - 24.6.0
-Demo - TODO
+[Demo](https://experiences-japan.netlify.app/)
 
 ### First-time setup
 You will need node and npm.
